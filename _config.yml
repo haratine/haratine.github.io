@@ -16,7 +16,7 @@ resume: true
 # resume-external: true
 # resume-url: https://google.com/?q=my+resume
 
-url: https://sergiokopplin.github.io/indigo
+url: https://haratine.net
 # your url: https://USERNAME.github.io
 
 permalink: /:title/
@@ -38,7 +38,7 @@ disqus:
 twitter: haratine
 # instagram: myinstagram
 # pinterest: mypinterest
-# linkedin: mylinkedin
+linkedin: haratine
 # youtube: myyoutube
 # spotify: myspotify
 github: haratine
