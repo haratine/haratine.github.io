@@ -200,7 +200,7 @@ To create the Storage Account, complete the following steps:
 <li>Select <b>Review + create</b> and then select <b>Create.</b></li>
 </ol>
 
-<br><img src="https://haratine.net/assets/images/azureFileSync/09storageAccount.jpeg" alt="storageAccount">
+<br><img src="https://haratine.net/assets/images/09storageAccount.jpeg" alt="storageAccount">
 
 <h2>Create the File Share</h2>
 To create the <b>File Share,</b> complete the following steps:
