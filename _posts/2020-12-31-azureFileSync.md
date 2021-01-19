@@ -79,7 +79,7 @@ Setting up a Windows Server VM in Azure is easiest to do with PowerShell (tip: i
 Complete the following steps to setup a VNET/Windows Server VM in Azure:
 <ol start="1">
 <li>Open PowerShell and type <b>az login</b></li>
-<br><p><img src="https://haratine.net/assets/images/azureFileSync/01azLogin.jpeg" alt="azLogin"></p>
+<br><p><img src="https://haratine.net/assets/images/01azLogin.jpeg" alt="azLogin"></p>
  
 <br><li>After you authenticate to Azure Cloud, create a resource group by running the following command:</li>
 <pre>
@@ -89,7 +89,7 @@ New-AzResourceGroup -Name $resourceGroup -Location $location</pre>
 
 <br><li>PowerShell will confirm the resource group has been created by providing "ProvisioningState : Succeeded" output as noted in the screenshot below. After confirming this proceed to the next step.</li>
 
-<br><p><img src="https://haratine.net/assets/images/azureFileSync/02createResourceGroupConfirmation.jpg" alt="createResourceGroupConfirmation"></p>
+<br><p><img src="https://haratine.net/assets/images/02createResourceGroupConfirmation.jpg" alt="createResourceGroupConfirmation"></p>
 
 <br><li>Create a Virtual Network (operations-sync-vnet) along with a subnet (operation-sync-subnet) with the following command (no PowerShell output for confirmation):</li>
 
@@ -105,13 +105,13 @@ $virtualNetwork = New-AzVirtualNetwork `
 -ResourceGroupName $resourceGroup `
 -Subnet $subnetConfig
 </pre>
-<p><img src="https://haratine.net/assets/images/azureFileSync/03createVNET.jpg" alt="createVNET"></p>
+<p><img src="https://haratine.net/assets/images/03createVNET.jpg" alt="createVNET"></p>
 
 <br><li>Enter the following command to create user credentials:</li>
 <pre>
 $cred = Get-Credential
 </pre>
-<p><img src="https://haratine.net/assets/images/azureFileSync/04credentials.jpg" alt="credentials"></p>
+<p><img src="https://haratine.net/assets/images/04credentials.jpg" alt="credentials"></p>
 
 <br><li>Choose a username and password for the Windows Server VM.</li>
 <li>Create the Windows Server VM by running the following command:</li>
@@ -125,9 +125,9 @@ New-Azvm `
  -VirtualNetworkName operations-sync-vnet `
  -SubnetName operation-sync-subnet `
  -Image "MicrosoftWindowsServer:WindowsServer:2019-Datacenter-with-Containers:latest"</pre>
- <p><img src="https://haratine.net/assets/images/azureFileSync/05createWindowsServer.jpeg" alt="createWindowsServer"></p>
+ <p><img src="https://haratine.net/assets/images/05createWindowsServer.jpeg" alt="createWindowsServer"></p>
 
-<p><img src="https://haratine.net/assets/images/azureFileSync/06windowsServerProvisioningSuccess.jpeg" alt="windowsServerProvisioningSuccess"></p>
+<p><img src="https://haratine.net/assets/images/06windowsServerProvisioningSuccess.jpeg" alt="windowsServerProvisioningSuccess"></p>
 
 <b>NOTE:</b> Before closing this out I made sure to tag the resource group – I always tag my resources in order to keep everything organized. I recommend getting in the habit of tagging resources whenever you create them. This will help tremendously when it comes time for reporting. I ran the following command from PowerShell to tag my new operations-file-sync-rg with 2 name-value pairs, as noted in the command and screenshot below.  
 
@@ -135,11 +135,11 @@ New-Azvm `
 $resourceGroup = Get-AzResourceGroup -Name operations-file-sync-rg
 New-AzTag -ResourceId $resourceGroup.ResourceId -tag $tags</pre>
 
-<p><img src="https://haratine.net/assets/images/azureFileSync/07resourceTag.jp2" alt="resourceTag"></p>
+<p><img src="https://haratine.net/assets/images/07resourceTag.jp2" alt="resourceTag"></p>
 
 After this, I double checked a couple things in Azure Portal. I verified my LocalServerServer was added to the appropriate VNET/Subnet, and also added some tags to the resource while in the portal
 
-<p><img src="https://haratine.net/assets/images/azureFileSync/08verifyingFileServer.jpeg" alt="verifyingFileServer"></p>
+<p><img src="https://haratine.net/assets/images/08verifyingFileServer.jpeg" alt="verifyingFileServer"></p>
 
 <h2><b>EVALUATION OF YOUR ON PREMISE SYSTEM</b></h2>
 
@@ -216,7 +216,7 @@ To create the <b>File Share,</b> complete the following steps:
 <li>Select <b>Create.</b></li>  
 </ol>
 
-<br><img src="https://haratine.net/assets/images/azureFileSync/010fileShares.jpeg" alt="fileShares">
+<br><img src="https://haratine.net/assets/images/010fileShares.jpeg" alt="fileShares">
 
 <h2>Create the Storage Sync Service</h2>
 To create the <b>Storage Sync Service,</b> complete the following steps:
@@ -227,7 +227,7 @@ To create the <b>Storage Sync Service,</b> complete the following steps:
 <li>Enter the same resource group and choose an appropriate name.</li>
 <li>Select <b>Review + create</b> and then select <b>Create.</b></li>
 </ol>
-<br><img src="https://haratine.net/assets/images/azureFileSync/012azureSyncService.jpeg" alt="azureSyncService">
+<br><img src="https://haratine.net/assets/images/012azureSyncService.jpeg" alt="azureSyncService">
 
 <h2>Create the Sync Group</h2>
 Complete the following steps to create the <b>Sync Group.</b>
@@ -241,7 +241,7 @@ Complete the following steps to create the <b>Sync Group.</b>
 <li>Select <b>Create.</b></li>
 </ol>
  
-<br><img src="https://haratine.net/assets/images/azureFileSync/013syncGroup.jpeg" alt="013syncGroup.jpeg">
+<br><img src="https://haratine.net/assets/images/013syncGroup.jpeg" alt="013syncGroup.jpeg">
 
 <h2><b>SETUP AZURE FILE SYNC ON WINDOWS SERVER(S):</b><i> Install the Azure File Sync Agent.</i></h2>
 Now that Azure File Sync is set up in the Azure portal, we will begin preparing Azure File Sync on our on-prem Windows Server. See below for an overview of steps needed to be completed for setting up Azure File Sync on Windows Server:
@@ -263,7 +263,7 @@ Now that Azure File Sync is set up in the Azure portal, we will begin preparing 
 <li>select <b>Server Manager -> Local Server.</b></li>
 <li>In the <b>Properties -> IE Enhanced Security Configuration,</b> select <b>On.</b></li>
 
-<br><p><img src="https://haratine.net/assets/images/azureFileSync/014enhanceSecurity.jpeg" alt="enhanceSecurity"></p>
+<br><p><img src="https://haratine.net/assets/images/014enhanceSecurity.jpeg" alt="enhanceSecurity"></p>
 
 <li>Select <b>Off</b> for <b>Administrators</b> and <b>Users.</b></li>
 </ol>
@@ -281,7 +281,7 @@ Complete the following steps to Install the Azure File Sync Agent from your Wind
 <li>Run any updates that are necessary and click <b>Finish.</b></li>
 </ol>
 
-<br><img src="https://haratine.net/assets/images/azureFileSync/015azureFileSyncAgentDownload.jpeg" alt="azureFileSyncAgentDownload">
+<br><img src="https://haratine.net/assets/images/015azureFileSyncAgentDownload.jpeg" alt="azureFileSyncAgentDownload">
 
 <h2>Register the Azure File Sync Agent</h2>
 Complete the following steps to <b>Register</b> the <b>Azure File Sync Agent</b> from your Windows Server:
@@ -290,7 +290,7 @@ Complete the following steps to <b>Register</b> the <b>Azure File Sync Agent</b>
 <li>Enter the appropriate values for <b>Subscription, Resource Group,</b> and <b>Storage Sync Service.</b></li>
 <li>Select <b>Register.</b></li>
 
-<br><p><img src="https://haratine.net/assets/images/azureFileSync/016azureFileSyncSignIn.jpeg" alt="016azureFileSyncSignIn.jpeg"></p>
+<br><p><img src="https://haratine.net/assets/images/016azureFileSyncSignIn.jpeg" alt="016azureFileSyncSignIn.jpeg"></p>
 
 <br><li>You should see <b>Registration successful!</b> Ensure the Network connectivity shows a status of <b>Passed.</b></li>
 </ol>
@@ -319,7 +319,7 @@ Complete the following steps to verify <b>Azure File Sync:</b>
 <li>Select Connect using different credentials.</li>
 
 
-<br><p><img src="https://haratine.net/assets/images/azureFileSync/018mapNetworkDrive.jpeg" alt="NetworkDrive"></p>
+<br><p><img src="https://haratine.net/assets/images/018mapNetworkDrive.jpeg" alt="NetworkDrive"></p>
 
 
 <br><li>Select Finish.</li>
@@ -330,7 +330,7 @@ Complete the following steps to verify <b>Azure File Sync:</b>
 <li>Create a folder in Documents called Confidential and to be sure, create a test document in this folder called daily-media-upload.</li>
 
 
-<br><img src="https://haratine.net/assets/images/azureFileSync/019testFolderDoc.jpeg" alt="testFolderDoc">
+<br><img src="https://haratine.net/assets/images/019testFolderDoc.jpeg" alt="testFolderDoc">
 
 
 <br><li>Back in the <b>Azure Portal,</b> go to the same <b>\Documents\Confidential</b> path from the on-premise Windows Server.</li>
@@ -338,7 +338,7 @@ Complete the following steps to verify <b>Azure File Sync:</b>
 <li>Verify you see the <b>daily-media-upload</b> file.</li>
 </ol>
 
-<br><img src="https://haratine.net/assets/images/azureFileSync/020azureConfirmation.jpeg" alt="azureConfirmation">
+<br><img src="https://haratine.net/assets/images/020azureConfirmation.jpeg" alt="azureConfirmation">
 
 
 <h2><b>SUMMARY</b></h2>
