@@ -79,7 +79,7 @@ Setting up a Windows Server VM in Azure is easiest to do with PowerShell (tip: i
 Complete the following steps to setup a VNET/Windows Server VM in Azure:
 <ol start="1">
 <li>Open PowerShell and type <b>az login</b></li>
-<br><p><img src="/assets/images/azureFileSync/01azLogin.jpeg" alt="azLogin"></p>
+<br><p><img src="https://haratine.net/assets/images/azureFileSync/01azLogin.jpeg" alt="azLogin"></p>
  
 <br><li>After you authenticate to Azure Cloud, create a resource group by running the following command:</li>
 <pre>
