@@ -79,7 +79,7 @@ Setting up a Windows Server VM in Azure is easiest to do with PowerShell (tip: i
 Complete the following steps to setup a VNET/Windows Server VM in Azure:
 <ol start="1">
 <li>Open PowerShell and type <b>az login</b></li>
-<br><p><img src="/assets/images/azureFileSync/01azLogin.jpg" alt="azLogin"></p>
+<br><p><img src="/assets/images/azureFileSync/01azLogin.jpeg" alt="azLogin"></p>
  
 <br><li>After you authenticate to Azure Cloud, create a resource group by running the following command:</li>
 <pre>
@@ -125,9 +125,9 @@ New-Azvm `
  -VirtualNetworkName operations-sync-vnet `
  -SubnetName operation-sync-subnet `
  -Image "MicrosoftWindowsServer:WindowsServer:2019-Datacenter-with-Containers:latest"</pre>
- <p><img src="/assets/images/azureFileSync/05createWindowsServer.jpg" alt="createWindowsServer"></p>
+ <p><img src="/assets/images/azureFileSync/05createWindowsServer.jpeg" alt="createWindowsServer"></p>
 
-<p><img src="/assets/images/azureFileSync/06windowsServerProvisioningSuccess.jpg" alt="windowsServerProvisioningSuccess"></p>
+<p><img src="/assets/images/azureFileSync/06windowsServerProvisioningSuccess.jpeg" alt="windowsServerProvisioningSuccess"></p>
 
 <b>NOTE:</b> Before closing this out I made sure to tag the resource group – I always tag my resources in order to keep everything organized. I recommend getting in the habit of tagging resources whenever you create them. This will help tremendously when it comes time for reporting. I ran the following command from PowerShell to tag my new operations-file-sync-rg with 2 name-value pairs, as noted in the command and screenshot below.  
 
@@ -135,7 +135,7 @@ New-Azvm `
 $resourceGroup = Get-AzResourceGroup -Name operations-file-sync-rg
 New-AzTag -ResourceId $resourceGroup.ResourceId -tag $tags</pre>
 
-<p><img src="/assets/images/azureFileSync/07resourceTag.jpeg" alt="resourceTag"></p>
+<p><img src="/assets/images/azureFileSync/07resourceTag.jp2" alt="resourceTag"></p>
 
 After this, I double checked a couple things in Azure Portal. I verified my LocalServerServer was added to the appropriate VNET/Subnet, and also added some tags to the resource while in the portal
 
@@ -200,7 +200,7 @@ To create the Storage Account, complete the following steps:
 <li>Select <b>Review + create</b> and then select <b>Create.</b></li>
 </ol>
 
-<br><img src="/assets/images/azureFileSync/09storageAccount.jpg" alt="storageAccount">
+<br><img src="/assets/images/azureFileSync/09storageAccount.jpeg" alt="storageAccount">
 
 <h2>Create the File Share</h2>
 To create the <b>File Share,</b> complete the following steps:
