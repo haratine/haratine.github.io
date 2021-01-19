@@ -79,7 +79,7 @@ Setting up a Windows Server VM in Azure is easiest to do with PowerShell (tip: i
 Complete the following steps to setup a VNET/Windows Server VM in Azure:
 <ol start="1">
 <li>Open PowerShell and type <b>az login</b></li>
-<br><p><img src="https://haratine.net/assets/images/01azLogin.jpeg" alt="azLogin"></p>
+<br><p><img src="https://haratine.net/assets/images/01azLogin.jpg" alt="azLogin"></p>
  
 <br><li>After you authenticate to Azure Cloud, create a resource group by running the following command:</li>
 <pre>
@@ -89,7 +89,7 @@ New-AzResourceGroup -Name $resourceGroup -Location $location</pre>
 
 <br><li>PowerShell will confirm the resource group has been created by providing "ProvisioningState : Succeeded" output as noted in the screenshot below. After confirming this proceed to the next step.</li>
 
-<br><p><img src="https://haratine.net/assets/images/02createResourceGroupConfirmation.jpg" alt="createResourceGroupConfirmation"></p>
+<br><p><img src="https://haratine.net/assets/images/02createResourceGroupConfirmation.jpeg" alt="createResourceGroupConfirmation"></p>
 
 <br><li>Create a Virtual Network (operations-sync-vnet) along with a subnet (operation-sync-subnet) with the following command (no PowerShell output for confirmation):</li>
 
@@ -105,13 +105,13 @@ $virtualNetwork = New-AzVirtualNetwork `
 -ResourceGroupName $resourceGroup `
 -Subnet $subnetConfig
 </pre>
-<p><img src="https://haratine.net/assets/images/03createVNET.jpg" alt="createVNET"></p>
+<p><img src="https://haratine.net/assets/images/03createVNET.jpeg" alt="createVNET"></p>
 
 <br><li>Enter the following command to create user credentials:</li>
 <pre>
 $cred = Get-Credential
 </pre>
-<p><img src="https://haratine.net/assets/images/04credentials.jpg" alt="credentials"></p>
+<p><img src="https://haratine.net/assets/images/04credentials.jpeg" alt="credentials"></p>
 
 <br><li>Choose a username and password for the Windows Server VM.</li>
 <li>Create the Windows Server VM by running the following command:</li>
@@ -127,7 +127,7 @@ New-Azvm `
  -Image "MicrosoftWindowsServer:WindowsServer:2019-Datacenter-with-Containers:latest"</pre>
  <p><img src="https://haratine.net/assets/images/05createWindowsServer.jpeg" alt="createWindowsServer"></p>
 
-<p><img src="https://haratine.net/assets/images/06windowsServerProvisioningSuccess.jpeg" alt="windowsServerProvisioningSuccess"></p>
+<p><img src="https://haratine.net/assets/images/06windowsServerProvisioningSuccess.jpg" alt="windowsServerProvisioningSuccess"></p>
 
 <b>NOTE:</b> Before closing this out I made sure to tag the resource group – I always tag my resources in order to keep everything organized. I recommend getting in the habit of tagging resources whenever you create them. This will help tremendously when it comes time for reporting. I ran the following command from PowerShell to tag my new operations-file-sync-rg with 2 name-value pairs, as noted in the command and screenshot below.  
 
@@ -135,7 +135,7 @@ New-Azvm `
 $resourceGroup = Get-AzResourceGroup -Name operations-file-sync-rg
 New-AzTag -ResourceId $resourceGroup.ResourceId -tag $tags</pre>
 
-<p><img src="https://haratine.net/assets/images/07resourceTag.jp2" alt="resourceTag"></p>
+<p><img src="https://haratine.net/assets/images/07resourceTag.jpeg" alt="resourceTag"></p>
 
 After this, I double checked a couple things in Azure Portal. I verified my LocalServerServer was added to the appropriate VNET/Subnet, and also added some tags to the resource while in the portal
 
