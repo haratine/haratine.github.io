@@ -19,9 +19,8 @@ description: Markdown summary with different options
 Azure provides a how-to guide for deploying Azure File Sync in their technical documentation here: 
 <a href="https://docs.microsoft.com/en-us/documentation/">Product Directory</a><b> -> </b><a href="https://docs.microsoft.com/en-us/azure/?product=featured">Azure</a><b> -> </b><a href="https://docs.microsoft.com/en-us/azure/?product=storage">Storage</a><b> -> </b><a href="https://docs.microsoft.com/en-us/azure/storage/files/">Deploy Azure File Sync</a> 
 
-I was curious to see what this would look like, so I decided to set this up in my test lab and run through the process my self. I documented the steps below. I hope you find this helpful!
+I was curious to see what this would look like, so I decided to set this up in my test lab and run through the process my self. I documented the steps below.
 
-Let’s start at the very beginning…
 
 <h2><b>WHAT IS AZURE FILE SYNC?</b></h2>
 
