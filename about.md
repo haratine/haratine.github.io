@@ -12,7 +12,15 @@ layout: page
 <h2>Skills</h2>
 
 <ul class="skill-list">
-	<li>Information</li>
-	<li>Security</li>
-	<li>Professional</li>
+	<li>Project Management</li>
+	<li>Security Engineering</li>
+	<li>Azure/AWS</li>
+	<li>Automation</li>
+	<li>IAM</li>
+	<li>PowerShell</li>
+	<li>Bash</li>
+	<li>JavaScript</li>
+	<li>Json</li>
+	<li>Python</li>
+	<li>Kali Distro, of course</li>
 </ul>
