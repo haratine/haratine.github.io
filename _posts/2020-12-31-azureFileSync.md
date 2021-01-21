@@ -2,8 +2,8 @@
 title: "Azure File Sync"
 layout: post
 date: 2020-12-31 22:48
-image: /assets/images/markdown.jpg
-headerImage: false
+image: /assets/images/azure.jpg
+headerImage: true
 tag:
 - Azure
 - Storage
