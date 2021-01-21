@@ -22,5 +22,5 @@ layout: page
 	<li>JavaScript</li>
 	<li>Json</li>
 	<li>Python</li>
-	<li>Kali Distro, of course</li>
+	<li>Kali Distro</li>
 </ul>
