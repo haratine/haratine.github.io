@@ -22,15 +22,15 @@ Azure virtual machine scale sets automatically increase or decrease the number o
 
 <b>IMPORTANT TERMINOLOGY</b>
 <ol start="1">
-<li><br>Horizontal Scaling</br> is the proceess of adding or removing several virtual machines in a scale set.</li>
-<li><br>Vertical Scaling</br> is the process of adding resources such as memory, CPU power, or disk space to VMs.</li>
-<li><br>Scheduled Calling,</br> where you proactively schedule the scale set to deploy one or <i>N</i> number of additional instances to accomodate a spike in trrafic and the spike back down when eveything is back to normal.</li>
-<li><br>Autoscaling:</br> Of the workload is variable and can't always be scheduled, you can use metric-based threshold scaling.</li>
+<li><b>Horizontal Scaling</b> is the proceess of adding or removing several virtual machines in a scale set.</li>
+<li><b>Vertical Scaling</b> is the process of adding resources such as memory, CPU power, or disk space to VMs.</li>
+<li><b>Scheduled Calling,</b> where you proactively schedule the scale set to deploy one or <i>N</i> number of additional instances to accomodate a spike in trrafic and the spike back down when eveything is back to normal.</li>
+<li><b>Autoscaling:</b> Of the workload is variable and can't always be scheduled, you can use metric-based threshold scaling.</li>
 </ol>
 
 
 <b>GOOD TO KNOW</b>
-<li><br>Low Priority Scaling Sets</br> give you up to 80% off on price, but come at a trade off: no availability gaurantees. See <a href="https://azure.microsoft.com/en-in/resources/videos/ignite-2018-save-costs-with-low-priority-vm-scale-sets/">here</a> for more details.</li>
+<li><b>Low Priority Scaling Sets</b> give you up to 80% off on price, but come at a trade off: no availability gaurantees. See <a href="https://azure.microsoft.com/en-in/resources/videos/ignite-2018-save-costs-with-low-priority-vm-scale-sets/">here</a> for more details.</li>
 </ol>
 
 
