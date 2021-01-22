@@ -126,7 +126,7 @@ Since we are working with a web server, it is important to add a health probe at
 <li>Find the public IP of the the virtual machine scale set and browse to it.</li>
 <br><img src="/assets/images/04scaleSets.jpeg" alt="04scaleSets">
 <li>Ensure you see the configurations made beforehand in the <b>cloud-init.yaml</b> file.</li>
-<br><img src="/assets/images/05scaleSets.jpeg" alt="05scaleSets">
+<br><img src="/assets/images/05scaleSets.jpg" alt="05scaleSets">
 </ol>
 
 
