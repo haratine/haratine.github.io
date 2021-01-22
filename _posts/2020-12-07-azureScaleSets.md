@@ -14,7 +14,10 @@ description: Azure VM Scale Sets
 ---
 
 <b>INTRODUCTION</b>
+Azure provides a how-to guide for create a Virtual Machine Scale Set in their technical documentation here: 
+<a href="https://docs.microsoft.com/en-us/documentation/">Product Directory</a><b> -> </b><a href="https://docs.microsoft.com/en-us/azure/?product=featured">Azure</a><b> -> </b><a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/tutorial-manage-vm">Create / Manage a VM</a><b> -> </b><a href="https://docs.microsoft.com/en-us/azure/virtual-machines/windows/tutorial-create-vmss">Create a scale set.</a> 
 
+I was curious to see what this would look like, so I decided to set this up in my test lab and run through the process my self. I documented the steps below.
 
 
 <h2>WHAT IS A VIRTUAL MACHINE SCALE SET?</h2>
