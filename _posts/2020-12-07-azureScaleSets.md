@@ -30,6 +30,7 @@ Azure virtual machine scale sets automatically increase or decrease the number o
 
 
 <b>GOOD TO KNOW</b>
+<ol start="1">
 <li><b>Low Priority Scaling Sets</b> give you up to 80% off on price, but come at a trade off: no availability gaurantees. See <a href="https://azure.microsoft.com/en-in/resources/videos/ignite-2018-save-costs-with-low-priority-vm-scale-sets/">here</a> for more details.</li>
 </ol>
 
