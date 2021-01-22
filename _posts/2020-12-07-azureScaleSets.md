@@ -93,7 +93,7 @@ runcmd:
 </ol>
 
 <h2>CONFIGURE THE VIRTUAL MACHINE SCALE SET</h2>
-Since we are working with a web server, it is important to add a health probe at port 80, this way if the server doesn't respond the web server is consider unavailable. Then, the load balancer would not route traffic to this particular server.
+Since we are working with a web server, it is important to add a health probe at port 80, this way if the server doesn't respond it is considered unavailable. As a result, the load balancer will not route traffic to this particular server.
 
 <ol start="1">
 <li>Run the following command to add a health probe to the load balancer:</li>
