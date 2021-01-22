@@ -56,7 +56,7 @@ runcmd:
 
 <li>Press Ctrl+S to save the file. Then press Ctrl+Q to close the code editor.</li>
 
-<br><img src="/assets/images/01scaleSets" alt="01scaleSets">
+<br><img src="/assets/images/01scaleSets.jpeg" alt="01scaleSets">
 
 <li>Run the following command to create a new resource group named <br>scaleset-rg<br> for your scale set:</li>
 
@@ -64,7 +64,7 @@ runcmd:
   --location eastus \
   --name scaleset-rg</pre>
 
-<br><img src="/assets/images/02scaleSets" alt="02scaleSets">
+<br><img src="/assets/images/02scaleSets.jpeg" alt="02scaleSets">
 
 <li>Run the following command to create the virtual machine scale set:</li>
 </ol>
