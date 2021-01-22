@@ -139,13 +139,13 @@ Since we are working with a web server, it important to add a health probe at po
 <li>On the virtual machine scale set page, under <b>Settings</b>, select <b>Scaling.</b></li>
 <li>Select Custom <b>autoscale.</b></li>
 <li>In the <b>Default</b> scale rule, ensure that the <b>Scale</b> mode is set to <b>Scale based on a metric.</b> Then select <b> + Add a rule.</b></li>
-<li>On the <b>Scale rule</b> page, specify the following properties and values: <b>Metric source</b>, <b>Time aggregation</b>, <b>Metric name</b>, <b>Time grain statistic</b>, <b>Operator</b>, <b>Threshold</b>, <b>Duration</b>, <b>Operation</b>, <b>Instance count</b>, <b>Cool down (minutes)</b> then select <b>Add.</b></li>
+<li>On the <b>Scale rule</b> page, specify the following properties and values: <b>Metric source</b>, <b>Time aggregation</b>, <b>Metric name</b>, <b>Time grain statistic</b>, <b>Operator</b>, <b>Threshold</b>, <b>Duration</b>, <b>Operation</b>, <b>Instance count</b>, <b>Cool down (minutes)</b>, then select <b>Add.</b></li>
 <br><img src="/assets/images/06scaleSets.jpeg" alt="06scaleSets">
 </ol>
 <b>CREATE A SCALE-IN RULE</b>
 <ol start="1">
 <li>In the <b>Default</b> scale rule, select <b>+ Add a rule.</b></li>
-<li>On the <b>Scale rule</b> page, specify the following properties and values: <b>Metric source</b>, <b>Time aggregation</b>, <b>Metric name</b>, <b>Time grain statistic</b>, <b>Operator</b>, <b>Threshold</b>, <b>Duration</b>, <b>Operation</b>, <b>Instance count</b>, <b>Cool down (minutes)</b> then select <b>Add.</b></li>
+<li>On the <b>Scale rule</b> page, specify the following properties and values: <b>Metric source</b>, <b>Time aggregation</b>, <b>Metric name</b>, <b>Time grain statistic</b>, <b>Operator</b>, <b>Threshold</b>, <b>Duration</b>, <b>Operation</b>, <b>Instance count</b>, <b>Cool down (minutes)</b>, then select <b>Add.</b></li>
 <br><img src="/assets/images/07scaleSets.jpeg" alt="07scaleSets">
 <li>Verify the rules have saved:</li>
 <br><img src="/assets/images/08scaleSets.jpeg" alt="08scaleSets">
