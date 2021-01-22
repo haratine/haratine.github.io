@@ -119,14 +119,13 @@ Since we are working with a web server, it is important to add a health probe at
 </ol>
 
 <h2>TEST THE VIRTUAL MACHINE SCALE SET</h2>
+<ol start="1">
 <li>In the <a href="https://portal.azure.com/">Azure portal</a>, go to Resources Groups -> scaleset-rg.</li>
 <br><img src="/assets/images/03scaleSets.jpeg" alt="03scaleSets">
-
 <li>Select the webServerScaleSet virtual machine scale set.</li>
-
 <li>Find the public IP of the the virtual machine scale set and browse to it.</li>
 <br><img src="/assets/images/04scaleSets.jpeg" alt="04scaleSets">
-<li>Ensure you see the configures made beforehand in the <b>cloud-init.yaml</b> file.</li>
+<li>Ensure you see the configurations made beforehand in the <b>cloud-init.yaml</b> file.</li>
 <br><img src="/assets/images/05scaleSets.jpeg" alt="05scaleSets">
 </ol>
 
