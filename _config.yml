@@ -1,6 +1,6 @@
 # main text of home
 name: Andrew Haratine
-bio: A Man who travels the world eating noodles
+bio: Networking, Infrastructure, Security, Privacy
 
 # twitter summary info
 description: A blog about technology and stuff related
@@ -55,7 +55,7 @@ email: andrewharatine@gmail.com
 authors:
   johndoe:
     name: Andrew Haratine
-    bio: A Man who travels the world eating noodles
+    bio: Networking, Infrastructure, Security, Privacy
     external-image: false
     picture: assets/images/sunset.jpg
     twitter: haratine
