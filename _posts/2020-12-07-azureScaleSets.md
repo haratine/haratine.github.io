@@ -1,7 +1,7 @@
 ---
 title: "Azure VM Scale Sets"
 layout: post
-date: 2020-12-14 22:48
+date: 2020-12-07 22:48
 image: /assets/images/azure.jpg
 headerImage: true
 tag:
