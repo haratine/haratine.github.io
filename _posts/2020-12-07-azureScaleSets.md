@@ -40,7 +40,7 @@ Azure virtual machine scale sets automatically increase or decrease the number o
 
 <h2>HOW DOES A VIRTUAL MACHINE SCALE SET WORK?</h2>
 
-Now that we know the key benefits, the important terminology, we are better prepared to dive into the Azure virtual machine scale set deployment process.
+Now that we know the key benefits and the important terminology, we are better prepared to dive into the Azure virtual machine scale set deployment process.
 
 <b>DEPLOYMENT PROCESS OVERVIEW</b>
 <ol start="1">
