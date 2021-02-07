@@ -1,7 +1,7 @@
 ---
 title: "Azure File Sync"
 layout: post
-date: 2020-12-31 22:48
+date: 2020-12-21 22:48
 image: /assets/images/azure.jpg
 headerImage: true
 tag:
