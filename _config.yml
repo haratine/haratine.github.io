@@ -114,6 +114,9 @@ defaults:
       # can be overridden in the front matter for a specific post
       hidden: false
 
+# Google Analytics
+google_analytics: G-B3C4QPL226
+
 plugins:
   - jekyll-seo-tag
   - jekyll-gist
