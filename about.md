@@ -26,4 +26,4 @@ layout: page
 
 <h2>Certifications</h2>
 
-<br><p><img src="https://haratine.net/assets/images/certificates20210313.jpg" alt="certificates20210313"></p>
+<br><img src="https://haratine.net/assets/images/certificates20210313.jpg" alt="certificates20210313">
