@@ -23,9 +23,6 @@ layout: page
 	<li>Python</li>
 	<li>Kali Distro</li>
 </ul>
-<h2>Education</h2>
-
-<br><img src="https://haratine.net/assets/images/education.jpg" alt="education">
 
 <h2>Certifications</h2>
 
