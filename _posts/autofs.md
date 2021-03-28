@@ -1,0 +1,105 @@
+---
+title: "AutoFS: Direct Mapping with CIFS"
+layout: post
+date: 2021-03-15 22:48
+image: /assets/images/01linux.jpeg
+headerImage: true
+tag:
+- Linux
+- Storage
+category: blog
+author: Andrew Haratine
+description: AutoFS: Direct Mapping with CIFS
+---
+
+
+<b>INTRODUCTION</b>
+
+Linux system's filesystem table, <i>fstab</i>, is a configuration table designed to ease the burden of mounting and unmounting file systems to a machine. It is a set of rules used to control how different filesystems are treated each time they are introduced to a system. One drawback of using /etc/fstab is that, regardless of how infrequently a user accesses the mounted file system, the system must dedicate resources to keep the mounted file system in place. With multiple mounts this can degraid system performance. An alternative to /etc/fstab is to use the kernel-based automount utility. 
+
+In this example, I go through the process of configuring a direct automount map using CIFS on a CentOS 7 box in my Azure home lab. 
+
+<h2><b>WHAT IS AUTOFS</b></h2>
+
+AutoFS is a kernel-based automount utility that consists of two components: 
+
+<ol start="1">
+<li>A kernel module that implements a file system.</li>
+<li>A user-space daemon that performs all of the other functions.</li>
+
+The automount utility can mount and unmount NFS file systems automatically (on-demand mounting), therefore saving system resources. It can be used to mount other file systems including AFS, SMBFS, CIFS, and local file systems. 
+</ol>
+
+<b>REQUIREMENTS</b>
+
+1. Lab environronment & a running instance of CentOS 7.
+
+
+<b>DEPLOYMENT PROCESS OVERVIEW</b>
+
+
+1.	<b>Install AutoFS</b>
+2.	<b>Configure the auto.master file</b>
+3.	<b>Create the auto.map file</b>
+4.	<b>Test configuration</b> 
+
+
+
+<b>TIME TO IMPLEMENT:</b> 15 minutes
+
+
+<h2><b>INSTALL AUTOFS</b></h2>
+<ol start="1">
+
+<li>First, run the following commands to make sure everything is up to date/upgraded.</li>
+<pre>sudo yum -y update</pre>
+<pre>sudo yum -y update</pre>
+<li>Run the following command to install <b>autofs</b></li>
+<pre>sudo yum -y install autofs</pre>
+<li>Now, run the following command to install <b>cifs</b></li>
+<pre>sudo yum -y install cifs-utils</pre>
+</ol>
+Note: in this example I am using autofs to mount Common Internet File System (CIFS). Autofs can also be used to mount NFS, AFS, SMBFS, and local file systems as stated above.
+
+
+<h2><b>CONFIGURE THE AUTO.MASTER FILE</b></h2>
+
+In this example we are going to directly map to a file system. AutoFS uses <i>/etc/auto.master</i> (master map) as its default primary configuration file. Direct maps in autofs provide a mechanism to automatically mount file systems at arbitrary points in the file system hierarchy. A direct map is denoted by a mount point of /- in the master map <i> auto.master file </i>
+<ol start="1">
+<li>Open the auto.master file in nano by issuing the following command:</li> 
+<pre>sudo nano /etc/auto.master</pre>
+<li>In auto.master configuration file, you need to specify the file that will contain your direct mapping information. Simply add the following line after <i>+auto.master</i>
+</li> 
+<pre>/etc/auto.directmap</pre>
+<p><img src="https://haratine.net/assets/images/autofs1.jpeg" alt="autofs1"></p>
+<li>Save and close auto.master file.</li> 
+</ol>
+
+
+<h2><b>CREATE THE MAP FILE</b></h2>
+<ol start="1">
+<li>From the /etc directory, issue the following command:</li> 
+<pre>sudo touch auto.directmap</pre>
+<li>Open the auto.directmap file in nano by issuing the following command:</li> 
+<pre>sudo nano auto.directmap</pre>
+<li>Edit the auto.directmap file to include the following information</li> 
+<pre>/mnt/mountpoint -fstype=cifs,rw,username=opsadmin,domain=secure.media   ://fqdn/fileshare</pre>
+<p><img src="https://haratine.net/assets/images/autofs2.jpeg" alt="autofs2"></p>
+
+<li>Now, change directories -> mnt and make a new directory called mountpoint:
+<pre>sudo mkdir mountpoint</pre>
+<li>Note: <b>/mnt/mountpoint</b> is where autofs where mount your File System configured in <i>auto.directmap</i> every time you <i>cd</i> into the mnt directory.</li> 
+</ol>
+
+
+<h2><b>VERIFY CONFIGURATIONS</b></h2>
+<ol start="1">
+<li>To test the configuration, run the following commands:</li> 
+<pre>sudo systemctl enable autfos</pre>
+<pre>sudo systemctl status autfos</pre>
+<pre>sudo mount -t cifs -o username=opsadmin,domain=secure.media //fqdn/fileshare /mnt/mountpoint/</pre>
+<li>Now, change directories into the /mnt/mountpoint directory. If everything is configured appropriately, the direct mapping should be listed.</li> 
+</ol>
+
+
+
