@@ -10,7 +10,7 @@ layout: page
 
 <h2>Skills</h2>
 
-<ul class="skill-list">
+<ul align="center" class="skill-list">
 	<li>Project Management</li>
 	<li>Security Engineering</li>
 	<li>Azure/AWS</li>
@@ -26,4 +26,4 @@ layout: page
 
 <h2>Certifications</h2>
 
-<br><img src="https://haratine.net/assets/images/certificates20210313.jpg" alt="certificates20210313">
+<br><img align="center" src="https://haratine.net/assets/images/certificates20210313.jpg" alt="certificates20210313">
