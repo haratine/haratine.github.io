@@ -165,7 +165,6 @@ systemctl enable keepalived
 systemctl start keepalived 
 </pre>
 </ol>
-<br>Here is a screenshot of the out put of both servers side by side after configuring the <i>keepalive.conf file</i>:
 
 <br><img src="/assets/images/01keepalived.jpg" alt="01keepalived">
 
@@ -174,7 +173,6 @@ systemctl start keepalived
 <li>To test the configuration, run the following command on both machines:</li> 
 <pre>sudo systemctl status keepalived</pre>
 </ol>
-<br>Here is a screenshot of the out put of both servers side by side:
 
 <br><img src="/assets/images/02keepalived.jpg" alt="02keepalived">
 
