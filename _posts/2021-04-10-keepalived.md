@@ -49,7 +49,7 @@ kepalived is a system daemon in Linux systems that provides frameworks for both 
 <b>DEPLOYMENT PROCESS OVERVIEW</b>
 
 
-1.	<b>Install Kepalive</b>
+1.	<b>Install keepalived</b>
 2.	<b>Configure Master Server keepalived.conf File</b>
 3.	<b>Configure Backup Server keepalived.conf File</b>
 4.  <b>Verify Configuration</b> 
@@ -163,6 +163,7 @@ vrrp_instance VI_1 {
 <pre>
 systemctl enable keepalived
 systemctl start keepalived 
+</pre>
 </ol>
 <br>Here is a screenshot of the out put of both servers side by side after configuring the <i>keepalive.conf file</i>:
 
