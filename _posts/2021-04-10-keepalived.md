@@ -28,7 +28,7 @@ kepalived is a system daemon in Linux systems that provides frameworks for both 
 <ol start="1">
   <li><b>VIP</b> — Virtual IP, a virtual IP address able to automatically switch between the servers in case of a failure.</li>
   <li><b>Master</b> — a server the VIP is currently active on.</li>
-<li><b>Backup</b> — servers the VIP will switch to in case of a Master failure.</li>
+<li><b>Backup</b> — a server the VIP will switch to in case of a Master failure.</li>
 <li><b>VRID</b> — Virtual Router ID.</li>
 </ol>
 
