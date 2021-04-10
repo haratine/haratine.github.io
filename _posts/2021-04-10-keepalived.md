@@ -1,5 +1,5 @@
 ---
-title: "keepalived: High Availability"
+title: "High Availability with keepalived"
 layout: post
 date: 2021-04-10 22:48
 image: /assets/images/redhat.jpg
