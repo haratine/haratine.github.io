@@ -9,6 +9,6 @@ layout: page
 
 
 
-<br><br>Lastly, please note (1) this site is under permanent construction (2) the content is for educational purposes only, and (3) if you have any issues with the ontent please feel free to email me.
+<br><br>Lastly, please note (1) this site is under ongoing construction ;) (2) the content is for educational purposes only, and (3) if you have any issues with the content please feel free to email me.
 
 
