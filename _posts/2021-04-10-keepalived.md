@@ -7,6 +7,7 @@ headerImage: true
 tag:
 - Linux
 - High Availability
+- Infrastructure
 category: blog
 author: Andrew Haratine
 description: Keepalived
