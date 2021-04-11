@@ -17,7 +17,7 @@ description: Keepalived
 
 <b>INTRODUCTION</b>
 
-keepalived can be used to monitor services or systems and to automatically failover to a standby node if problems occur. High availability is achieved by the Virtual Redundancy Routing Protocol (VRRP). As a result, high availabilty can be maintained in across your environment.
+keepalived can be used to monitor services or systems and to automatically failover to a standby node if problems occur. High availability is achieved by the Virtual Redundancy Routing Protocol (VRRP). As a result, high availabilty can be maintained across your environment.
 
 <h2><b>WHAT IS KEEPALIVED</b></h2>
 
