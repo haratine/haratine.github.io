@@ -1,7 +1,7 @@
 ---
 title: "Linux: Ubuntu 18.04 DHCP Server"
 layout: post
-date: 2021-03-01 22:48
+date: 2021-02-15 22:48
 image: /assets/images/01linux.jpeg
 headerImage: true
 tag:
