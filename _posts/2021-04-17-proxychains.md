@@ -1,5 +1,5 @@
 ---
-title: "Configuring Proxychains on Kali Linux"
+title: "TCP Connections & Proxychains"
 layout: post
 date: 2021-04-17 22:48
 image: /assets/images/kali.jpg
