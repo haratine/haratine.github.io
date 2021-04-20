@@ -157,7 +157,7 @@ vim environment
 
 <h2><b>USE CASES</b></h2>
 
-<br>See below for some exampes use cases for Proxychains:
+<br>See below for some exampe use cases for Proxychains:
 <ol start="1">
 <li>Proxychains with Nmap scans:</li> 
 <pre>
