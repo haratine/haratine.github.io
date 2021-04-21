@@ -66,7 +66,7 @@ kepalived is a system daemon in Linux systems that provides frameworks for both 
 
 <li>First, run the following commands to make sure everything is up to date/upgraded.</li>
 <pre>sudo yum -y update</pre>
-<pre>sudo yum -y update</pre>
+<pre>sudo yum -y upgrade</pre>
 <li>Run the following command to install <b>keepalived</b></li>
 <pre>sudo yum -y install keepalived</pre>
 </ol>
