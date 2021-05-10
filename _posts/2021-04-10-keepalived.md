@@ -22,7 +22,7 @@ keepalived can be used to monitor services or systems and to automatically failo
 
 <h2><b>WHAT IS KEEPALIVED</b></h2>
 
-kepalived is a system daemon in Linux systems that provides frameworks for both high availability and load balancing. 
+keepalived is a system daemon in Linux systems that provides frameworks for both high availability and load balancing. 
 
 <b>IMPORTANT TERMINOLOGY</b>
 
