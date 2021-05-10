@@ -181,7 +181,7 @@ systemctl start keepalived
 
 <h2><b>SUMMARY</b></h2>
 <ol start="1">
-<li>Minimal congiruation was needed to configure high availibility.</li>
+<li>Minimal congiruation is needed to configure high availibility.</li>
 <li>Attention to detail is key: ensure the <b>Backup</b> server has a lower priority than the <b>Master</b>, the <b>STATE</b> is set appropriately, and the <b>VIP</b> is not being used by another DHCP host in your environment.</li>
 <li>To be sure, <i>keepalived</i> is a great option if you are considering high availability for your critical infrastructure.</li>
 </ol>
