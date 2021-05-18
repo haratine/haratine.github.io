@@ -1,9 +1,9 @@
 # main text of home
 name: Andrew Haratine
-bio: IT Infrastructure & Security
+bio: IT, Infrastructure & Security
 
 # twitter summary info
-description: IT Infrastructure & Security
+description: IT, Infrastructure & Security
 
 # if it's an external image, update below for true
 # better with square images
@@ -55,7 +55,7 @@ email: andrew@haratine.net
 authors:
   johndoe:
     name: Andrew Haratine
-    bio: IT Infrastructure & Security
+    bio: IT, Infrastructure & Security
     external-image: false
     picture: assets/images/sunset.jpg
     twitter: haratine
